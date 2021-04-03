@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Week 12 Slides</title>
+		<title>How to make a presentation in Reveal.js</title>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reset.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.css">
@@ -16,73 +16,52 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<h3>INFO 3402: Information Exposition</h3>
-					<p style="color:#CFB87C; font-weight:bold;">Brian Keegan & Abram Handler</p>
-					<p style="color:#565A5C">Week 12: March 29 - April 2 2021</h5>
+				<section data-transition="slide-in fade-out">
+					<h3>How to make a presentation in Reveal.js</h3>
+					<p style="color:#CFB87C; font-weight:bold;">Meghan O'Malley</p>
+					<p style="color:#565A5C">April 2 2021</h5>
 				</section>
 				
 
-				<section>
-					<h3>Outline for Wednesday, March 31</h3>
+				<section data-transition="slide-in fade-out">
+					<h3>Introduction</h3>
 					<ul>
-						<li><a href="https://github.com/brianckeegan/brianckeegan.github.io/blob/master/week11.html">Week 11 code here</a> (<a href="https://brianckeegan.github.io/week11.html">slides</a>)</li>
-						<li>Weekly Assignment 10</li>
-						<li>Extending <a href="https://revealjs.com/">Reveal.js</a></li>
-						<ul>
-							<li>Animating code blocks</li>
-							<li>Vertical slides</li>
-						</ul>
-						<li>Hacking breakouts & share-outs</li>
-						<ul>
-							<li>Slide numbers</li>
-							<li>Themes</li>
-							<li>Notes</li>
-							<li>Math</li>
-						</ul>
+						<p>Reveal.js is a popular open source tool used to create interactive presentations on the web. There are many features of Reveal.js and this presentation highlights a few.</p>
+						<li>Start <a href="https://revealjs.com/">Here</a></li>
+						
 					</ul>
-				</section>
+				</section data-transition="slide-in fade-out">
 
 				<!-- Start of a vertical slide -->
-				<section>
-					<section>
-						<h3>Weekly Assignment 10</h3>
-						<p><b>Due Friday, April 2 by midnight</b></p>
-						<p>Make a "meta-deck": a presentation describing how you made the presentation in Reveal.js.</p>
-						<p>You're making a tutorial for others on how to use a particular feature of Reveal.js.</p>
+				<section data-transition="slide-in fade-out">
+					<section data-transition="slide-in fade-out">
+						<h3>Implementing Media</h3>
+						<p>
+							<ul>
+							<li><b>Introduction/motivation</b>:Someone may need to show something from an outside source and add a visual.</li>
+							<li><b>Statement of problem</b>: Reveal.js has elements with media components that are different.<a href="https://revealjs.com/media/"> Source Link.</a></li>
+							<li><b>Solution details</b>: Because slides are being used, a video can take up the background of a slide. </li>
+							
+						</ul>
+						</p>
+						
+					</section>
+
+					
+					<section data-background-iframe="https://www.youtube.com/embed/QSX1yinDZx4"data-background-interactive>
+  						
+						
+						
 					</section>
 
 					<section>
-						<h3>Weekly Assignment 10</h3>
-						<p>Presentation should be 5-10 slides and include</p>
-						<ul>
-							<li>Some kind of media (static or animated images)</li>
-							<li>At least two code blocks illustrating how to implement a feature</li>
-							<li>Some kind of animation ("fragment") or slide transition</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Weekly Assignment 10</h3>
-						<p>Your deck should have parts like:</p>
-						<ul>
-							<li><b>Introduction/motivation</b>: Why would someone need this functionality?</li>
-							<li><b>Statement of problem</b>: What is the minimum example to demonstrate? What are challenges?</li>
-							<li><b>Solution details</b>: step-by-step guide with examples and code blocks on how to implement</li>
-							<li><b>Conclusion</b>: Links to next steps, resources, citations</li>
-						</ul>
-					</section>
-
-					<section>
-						<h3>Weekly Assignment 10</h3>
-						<p>Ideas:</p>
-						<ul>
-							<li>Implementing documented features (easy)</li>
-							<li>Image and text side-by-side (easy-medium)</li>
-							<li>Embedding another webpage (medium)</li>
-							<li>Customizing CSS (medium)</li>
-							<li>Utilizing API to customize (hard) </li>
-							<li>Adding interactive visualizations (hard)</li>
-						</ul>
+						<h3>How To</h3>
+						<pre><code data-trim data-nonescape> 
+							section data-background-iframe="https://www.youtube.com/embed/QSX1yinDZx4"data-background-interactive 
+							</code></pre>
+						</script></pre></code>
+						<a href="https://revealjs.com/backgrounds/#iframe-backgrounds"> Source Link.</a>
+						
 					</section>
 				</section>
 				<!-- End of a vertical slide -->
@@ -100,6 +79,7 @@
 						<li>Math</li>
 					</ul>
 				</section>
+
 
 				<!-- Vertical slides for each topic -->
 				<section>
@@ -170,32 +150,7 @@
 
 				</section>
 
-				<section>
-					<h3>Daily Participation</h3>
-					<ol>
-						<li><a href="https://github.com/brianckeegan/brianckeegan.github.io/blob/master/week12.html">Download this Reveal.js presentation</a></li>	
-						<li>Join a Hack & Tell breakout room</li>
-						<li>15 minutes to implement within file</li>
-						<li>Group share-out at end of class</li>
-						<li><a href="https://canvas.colorado.edu/courses/70121/assignments/1020972">Submit revised file to Canvas</a></li>
-					</ol>
-					
-				</section>
-
-				<section>
-					<h3>Hack & Tell Breakouts</h3>
-					<p>2 breakout rooms for each topic</p>
-					<p>~6-8 students per room</p>
-					<ul>
-						<li>Slide numbers</li>
-						<li>Themes</li>
-						<li>Notes</li>
-						<li>Math</li>
-					</ul>
-					<p>Have a basic example of how to implement</p>
-					<p>Share example to GitHub Pages</p>
-				</section>
-
+				
 				<section>
 
 					<section>
@@ -386,23 +341,7 @@
 
 				</section>
 
-				<section>
-					<h3>Outline for Friday, April 2</h3>
-					<ul>
-						<li><a href="https://github.com/brianckeegan/brianckeegan.github.io/blob/master/week11.html">Week 11 code here</a> (<a href="https://brianckeegan.github.io/week11.html">slides</a>)</li>
-						<li>Weekly Assignment 10 due tonight!</li>
-						<li>Working with <a href="https://www.mathjax.org/">Mathjax</a></li>
-						<ul>
-							<li>Symbols and Letters</li>
-							<li>Operators</li>
-							<li>Powers and indices</li>
-							<li>Fractions</li>
-							<li>Sums</li>
-							<li>Matrices</li>
-						</ul>
-						</ul>
-					</ul>
-				</section>
+				
 
 				<section>
 					<h3>Mathematical exposition</h3>
@@ -523,65 +462,7 @@
 					</section>
 				</section>
 
-				<section>
-					<section>
-						<h3>Challenges</h3>
-						<p>Six common formulas used in data science</p>
-						<ul>
-							<li><a href="https://en.wikipedia.org/wiki/Mean">Geometric mean</a></li>
-							<li><a href="https://en.wikipedia.org/wiki/Standard_deviation">Standard deviation</a></li>
-							<li><a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation</a></li>
-							<li><a href="https://en.wikipedia.org/wiki/Standard_score">Standard score</a></li>
-							<li><a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidian distance</a></li>
-							<li><a href="https://en.wikipedia.org/wiki/Cosine_similarity">Cosine similarity</a></li>
-						</ul>
-						<p>Write the formula in LaTeX/Mathjax</p>
-						
-					</section>
-
-					<section>
-						<h3>Challenge 1</h3>
-						<p>Write the formula for the <a href="https://en.wikipedia.org/wiki/Mean">geometric mean</a></p>
-						\[a^2 + b^2 = c^2 \]
-						\[
-						\bar{x}= \left(\prod_{i=1}^{n}x_{i}\right)^{\frac {1}{n}}
-						\]
-
-
-
-					</section>
-
-					<section>
-						<h3>Challenge 2</h3>
-						<p>Write the formula for the <a href="https://en.wikipedia.org/wiki/Standard_deviation">standard deviation</a></p>
-					</section>
-
-					<section>
-						<h3>Challenge 3</h3>
-						<p>Write the formula for <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation</a></p>
-					</section>
-
-					<section>
-						<h3>Challenge 4</h3>
-						<p>Write the formula for the <a href="https://en.wikipedia.org/wiki/Standard_score">standard score</a></p>
-					</section>
-
-					<section>
-						<h3>Challenge 5</h3>
-						<p>Write the formula for <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidian distance</a></p>
-					</section>
-
-					<section>
-						<h3>Challenge 6</h3>
-						<p>Write the formula for <a href="https://en.wikipedia.org/wiki/Cosine_similarity">cosine similarity</a></p>
-					</section>
-
-					<section>
-						<h3>Want more practice?</h3>
-						<p>If you liked this typesetting translation exercise, try the <a href="https://medium.com/however-mathematics/17-equations-that-changed-the-world-a043a8c24022">17 Equations That Changed the World</a></p>
-						<img data-src="https://pbs.twimg.com/media/Ex_BgLqVEAAP_2D.png" height="400">
-					</section>
-				</section>
+				
 			</div>
 		</div>
 
